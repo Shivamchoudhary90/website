@@ -1,0 +1,181 @@
+/* Header Buttons Container */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Login Button (Maroon) */
+.student-btn {
+  background-color: #8b1818;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.student-btn:hover {
+  background-color: #6f1212;
+}
+
+/* Registration Button (Light Yellow Highlight) */
+.registration-btn {
+  background-color: #750000 !important;   /* Light Yellow background */
+  color: white !important;              /* Rich golden/brown text */
+  border: 1.5px solid  !important;  /* Soft golden border */
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.registration-btn:hover {
+  background-color: #ffe8a1 !important;  /* Hover par thoda dark yellow */
+  transform: translateY(-1px);
+}
+
+
+#root{
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  border: none;
+}
+#root{
+  border: none;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.header {
+  width: 100%;
+  height: 125px;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 30px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-circle {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 16px;
+}
+.logo-circle img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo h1 {
+  color: #750000;
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.logo h2 {
+  color: #750000;
+  font-size: 25px;
+  margin:4px 0 0;
+  font-weight: 800;
+  line-height: 1.2;
+
+}
+
+.logo p {
+  margin:7px 0 0;
+  color:#222222;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.gyaan-text{
+    width: 25%;
+    text-align:center;
+
+}
+.gyaan-text h3{
+    margin: 3px 0;
+    color: #7d1111;
+    font-size:20px;
+    font-weight: 700;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-buttons button {
+  border: none;
+  color: white;
+
+  padding: 12px 18px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+
+.admin-btn {
+  background: #c58a00;
+}

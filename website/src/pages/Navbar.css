@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #111;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+}
+
+/* Header & Top Branding */
+header {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* Red Navigation Bar */
+.navbar {
+    width: 100%;
+    height: 52px;
+    background-color: #720000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    height: 52px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.nav-link span {
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: #8c1515;
+}
+
+.nav-link:active {
+    background-color: #d49a00;
+    color: #ffffff;
+}
+
+/* Main Content Area & Collapsing Margin Fix */
+main, section {
+    width: 100%;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    background: #111;
+}
+
+/* Navbar ke turant baad aane wale element ka top margin zero */
+.navbar + *, header + * {
+    margin-top: 0 !important;
+}
