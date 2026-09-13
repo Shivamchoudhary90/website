@@ -89,7 +89,7 @@ function Login({ onSwitchToRegister }) {
   const handleResetPassword = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/reset-password", {
+      const res = await fetch("https://website-r1i5.onrender.com/api/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
