@@ -45,7 +45,7 @@ function Login({ onSwitchToRegister }) {
     }
 
     try {
-      const res = await fetch("https://website-r1i5.onrender.com/register", {
+      const res = await fetch("https://website-r1i5.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
