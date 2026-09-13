@@ -45,7 +45,7 @@ function Login({ onSwitchToRegister }) {
     }
 
     try {
-      const res = await fetch("https://website-r1i5.onrender.com/login", {
+      const res = await fetch("https://website-r1i5.onrender.com/api/login", {
        method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -68,7 +68,7 @@ function Login({ onSwitchToRegister }) {
   const handleSendOtp = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://website-r1i5.onrender.com/login", {
+      const res = await fetch("https://website-r1i5.onrender.com/api/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: forgotEmail })
