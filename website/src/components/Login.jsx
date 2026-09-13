@@ -68,7 +68,7 @@ function Login({ onSwitchToRegister }) {
   const handleSendOtp = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/forgot-password", {
+      const res = await fetch("https://website-r1i5.onrender.com/register", ...) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: forgotEmail })
