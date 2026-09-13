@@ -32,7 +32,10 @@ function Header() {
     <header className="header">
       <div className="logo">
         <div className="logo-circle">
-          <img src="/public/logo.png" alt="Foundation Logo" />
+          <img
+  src={`${import.meta.env.BASE_URL}logo.png`}
+  alt="Foundation Logo"
+/>
         </div>
         <div>
           <h1>संत श्री किशनाराम फाउंडेशन</h1>
