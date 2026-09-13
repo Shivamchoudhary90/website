@@ -53,8 +53,8 @@ const handleSubmit = async (e) => {
       return;
     }
 
-    try {
-      const res = await  fetch("https://website-r1i5.onrender.com/register",{
+   try {
+      const res = await fetch("https://website-r1i5.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -64,7 +64,6 @@ const handleSubmit = async (e) => {
           password: formData.password
         })
       });
-
       const data = await res.json();
 
       if (res.ok) {
